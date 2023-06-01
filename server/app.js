@@ -10,7 +10,10 @@ const userRoute = require("./Routes/userRoute");
 const postRoute = require("./Routes/postRoute");
 const app = express();
 //
-
+//
+//
+//
+// i have external file also in config folder ----***
 const User = require("./Models/userModel");
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
@@ -38,7 +41,7 @@ passport.use(
     }
   })
 );
-
+//--------------- end passport auth -------------*****
 //
 //
 // middleware
