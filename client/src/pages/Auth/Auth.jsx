@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 import "./Auth.css";
@@ -51,9 +51,9 @@ const Auth = () => {
       });
   };
 
-  useEffect(() => {
-    loginUser();
-  }, []);
+  // useEffect(() => {
+  //   loginUser();
+  // }, []);
 
   // if signup page
   const [isSignUp, setSignUp] = useState(false);
